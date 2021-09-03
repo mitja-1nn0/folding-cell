@@ -29,7 +29,7 @@ import PackageDescription
 let package = Package(
     name: "FoldingCell",
     platforms: [
-        .iOS(.v8)
+        .iOS(.v9)
     ],
     products: [
         .library(name: "FoldingCell",
