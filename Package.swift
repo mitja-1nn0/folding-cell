@@ -31,6 +31,14 @@ let package = Package(
     platforms: [
         .iOS(.v9)
     ],
+    dependencies: [
+        // Here we define our package's external dependencies
+        // and from where they can be fetched:
+        .package(
+            url: "https://github.com/mitja-1nn0/folding-cell", 
+            .branch("master")
+        )
+    ],
     products: [
         .library(name: "FoldingCell",
             targets: ["FoldingCell"]),
